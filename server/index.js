@@ -30,9 +30,7 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common")); // for HTTP request logging.
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors(
-  {origin: ["http://localhost:3000", "https://social-sphere.onrender.com"]}
-));
+app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, "public/assets"))); //store assets locally(can change to cloud storage)
 
 /* FILE STORAGE */
