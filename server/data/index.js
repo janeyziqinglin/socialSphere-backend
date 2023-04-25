@@ -78,8 +78,8 @@ export const users = [
   },
   {
     _id: userIds[4],
-    firstName: "Jane",
-    lastName: "Doe",
+    firstName: "Jenny",
+    lastName: "Kim",
     email: "janedoe@gmail.com",
     password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
     picturePath: "p5.jpeg",
